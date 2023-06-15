@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;500&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+body{
+    font-family: 'Kanit', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* nav  section start */
+#navbar{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+}
+#navbar .navbar-right a{
+    padding: 1rem;
+}
+/* nav section end */
+
+/* intro section start */
+    #intro{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: black;
+        padding: 0 20px;
+        position: relative;
+        
+    }
+    /* video konumlandırma başlangıç */
+    .video-container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #333;
+    }
+    .video-container video{
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+    }
+    /* video konumlandırma bitiş */
+
+    /* karartma efekti */
+    .video-container::after{
+        position: absolute;
+        content: "";
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.7);
+    }
+    .content{
+        z-index: 2;
+        background-color: white;
+        opacity: 0.5;
+        color: black;
+        padding: 2rem 10rem;
+        border-radius: 2rem;
+    }
+    .content button{
+        cursor: pointer;
+        background-color: blueviolet;
+        border: none;
+        border-radius: 1rem;
+        padding: 1rem;
+        color: #fff;
+    }
+    .content button:hover{
+        background-color: rgb(95, 32, 154) ;
+    }
+/* intro section end */
+
+/* products section start */
+    .product h3{
+        text-align: center;
+        margin-top: 5rem;
+    }
+
+    .product .kategoriler{
+        margin-top: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 2rem;
+    }
+    
+    .product .kategoriler img:hover{
+        color: #333;
+        opacity: 0.8;
+        transition: ease-in 0.2s;
+    }
+
+
+/* products section end */
+
+/* about section start */
+    .container{
+        margin: 5rem;
+        padding: 5rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .about-left{
+        width: 700px;
+        height: 100%;
+    }
+    .about-left img{
+        width: 100%;
+        height: 100%;
+        border-radius: 15rem;
+    }
+    .about-right{
+        text-align: center;
+        width: 700px;
+    }
+    .about-right h4{
+        font-size: 2rem;
+        color: orange;
+    }
+    .icons{
+        margin-top: 5rem;
+    }
+    .icons button {
+        margin: 1rem;
+        background-color: orange;
+        padding: 1rem;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+    .icons button i{
+        font-size: 1rem;
+    }
+    .icons  button:hover i{
+        font-size: 2rem;
+        transition: ease-in-out  1s;
+    }
+
+/* about section end */
